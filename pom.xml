@@ -32,100 +32,15 @@
     </properties>
     <!-- 引入SpringCloud微服务常用组件-->
     <modules>
-        <module>springcloud-eureka-server</module>
-        <module>springcloud-eureka-server-ha</module>
-        <module>springcloud-provider-user-service</module>
-        <module>springcloud-consumer-h5-ribbon-hystrix</module>
-        <module>springcloud-consumer-h5-feign</module>
-        <module>springcloud-api-gateway</module>
-        <module>springcloud-consumer-h5</module>
-        <module>springcloud-config-server</module>
+        <module>euaeka-server</module>
+        <module>eureka-client1</module>
+        <module>service-feign</module>
+        <!--<module>springcloud-provider-user-service</module>-->
+        <!--<module>springcloud-consumer-h5-ribbon-hystrix</module>-->
+        <!--<module>springcloud-consumer-h5-feign</module>-->
+        <!--<module>springcloud-api-gateway</module>-->
+        <!--<module>springcloud-consumer-h5</module>-->
+        <!--<module>springcloud-config-server</module>-->
     </modules>
-    <dependencies>
-        <!-- 服务发现组件-->
-        <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-eureka-server</artifactId>
-        </dependency>
 
-        <!-- 应用监控-->
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-actuator</artifactId>
-        </dependency>
-
-        <!-- 应用测试-->
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-test</artifactId>
-            <scope>test</scope>
-        </dependency>
-
-
-        <dependency>
-            <groupId>mysql</groupId>
-            <artifactId>mysql-connector-java</artifactId>
-            <scope>runtime</scope>
-        </dependency>
-
-        <dependency>
-            <groupId>com.alibaba</groupId>
-            <artifactId>druid</artifactId>
-            <version>${druid.version}</version>
-        </dependency>
-
-
-        <dependency>
-            <groupId>javax.servlet</groupId>
-            <artifactId>javax.servlet-api</artifactId>
-            <version>${servlet-api.version}</version>
-        </dependency>
-
-        <dependency>
-            <groupId>com.fasterxml.jackson.core</groupId>
-            <artifactId>jackson-annotations</artifactId>
-            <version>${jackson.version}</version>
-        </dependency>
-
-        <dependency>
-            <groupId>org.apache.commons</groupId>
-            <artifactId>commons-lang3</artifactId>
-            <version>${commons-lang3.version}</version>
-        </dependency>
-
-        <dependency>
-            <groupId>org.apache.commons</groupId>
-            <artifactId>commons-collections4</artifactId>
-            <version>${commons-collection4.version}</version>
-        </dependency>
-
-        <dependency>
-            <groupId>org.hibernate</groupId>
-            <artifactId>hibernate-ehcache</artifactId>
-            <version>${hibernate.version}</version>
-        </dependency>
-
-        <dependency>
-            <groupId>org.ehcache</groupId>
-            <artifactId>ehcache</artifactId>
-            <version>${ehcache.version}</version>
-        </dependency>
-
-        <dependency>
-            <groupId>org.springframework</groupId>
-            <artifactId>spring-oxm</artifactId>
-            <version>${springframework.oxm.version}</version>
-        </dependency>
-    </dependencies>
-    <dependencyManagement>
-        <dependencies>
-            <dependency>
-                <groupId>org.springframework.cloud</groupId>
-                <artifactId>spring-cloud-dependencies</artifactId>
-                <version>${spring-cloud.version}</version>
-                <type>pom</type>
-                <scope>import</scope>
-            </dependency>
-        </dependencies>
-    </dependencyManagement>
 </project>
