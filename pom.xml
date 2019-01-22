@@ -35,6 +35,8 @@
         <module>euaeka-server</module>
         <module>eureka-client1</module>
         <module>service-feign</module>
+        <module>config-server</module>
+        <module>spring-admin</module>
         <!--<module>springcloud-provider-user-service</module>-->
         <!--<module>springcloud-consumer-h5-ribbon-hystrix</module>-->
         <!--<module>springcloud-consumer-h5-feign</module>-->
